@@ -8,72 +8,140 @@
     <title>My Website</title>
     <meta name="description" content="A simple HTML starter template.">
     <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
+    <header class="bg-indigo-600 dark:bg-indigo-900">
+        <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180" alt=""
+                        class="h-8 w-auto dark:hidden" />
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180" alt=""
+                        class="h-8 w-auto not-dark:hidden" />
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-indigo-300 dark:text-indigo-200">
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.html" class="text-sm/6 font-semibold text-white">Home</a>
+                <a href="hobbie.html" class="text-sm/6 font-semibold text-white">Hobbies</a>
+                <a href="video.html" class="text-sm/6 font-semibold text-white">Video</a>
+
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180"
+                                    alt="" class="h-8 w-auto dark:hidden" />
+
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400">
+                                <span class="sr-only">close menu</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10 dark:divide-gray-500/20">
+                                <div class="space-y-2 py-6">
+                                    <a href="index.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Home</a>
+                                    <a href="hobbie.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Hobbies</a>
+                                    <a href="video.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Video</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Dashboard</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+
+    <header>
+        <h1>What you should know about saxophone</h1>
+        <p>This is a simple guide to learning about the saxophone.</p>
+    </header>
+    <div class="page-nav">
+        <ul>
+            <li><a href="#history">History</a></li>
+            <li><a href="#sax-family">Saxophone Family</a></li>
+            <li><a href="#brands">brands</a></li>
+            <li><a href="#famous-saxophonists">Famous Saxophonists</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="history">
+            <h2>History</h2>
+            <p>Use this template as the foundation for your next web project.</p>
+        </section>
+        <section id="sax-family">
+            <h2>Saxophone Family</h2>
+            <p>Learn about the different types of saxophones.</p>
+            <img src="https://tse3.mm.bing.net/th/id/OIP.1nXE4ejxI3umSl4GlukzRQHaDM?pid=Api&P=0&h=180">
+            <h3>Types of Saxophones</h3>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hobbie.html">Hobbies</a></li>
-                <li><a href="video.html">Video</a></li>
+                <li>Soprano Saxophone</li>
+                <p>The soprano saxophone is the smallest and highest-pitched member of the saxophone family.</p>
+                <li>Alto Saxophone</li>
+                <p>The alto saxophone is the most commonly used saxophone in jazz and classical music.</p>
+                <li>Tenor Saxophone</li>
+                <p>The tenor saxophone has a rich, warm tone and is popular in both jazz and popular music.</p>
+                <li>Baritone Saxophone</li>
+                <p>The baritone saxophone produces a deep, resonant sound and is often used in military bands and
+                    orchestras.</p>
             </ul>
-        </div>
-        <header>
-            <h1>What you should know about saxophone</h1>
-            <p>This is a simple guide to learning about the saxophone.</p>
-        </header>
-        <div class="page-nav">
-            <ul>
-                <li><a href="#history">History</a></li>
-                <li><a href="#sax-family">Saxophone Family</a></li>
-                <li><a href="#brands">brands</a></li>
-                <li><a href="#famous-saxophonists">Famous Saxophonists</a></li>
-            </ul>
-        </div>
+        </section>
+        <section id="brands">
+            <h2>Popular Brands</h2>
+            <p>Discover the most renowned saxophone manufacturers.</p>
+            <h3>Selmer</h3>
+            <img src="https://tse2.mm.bing.net/th/id/OIP.dl0_zWx75g1J0k6X8x3WQHaE8?pid=Api&P=0&h=180"
+                alt="Selmer Saxophone">
+            <p>Selmer is a renowned manufacturer of saxophones, known for their high-quality instruments.</p>
 
-        <main>
-            <section id="history">
-                <h2>History</h2>
-                <p>Use this template as the foundation for your next web project.</p>
-            </section>
-            <section id="sax-family">
-                <h2>Saxophone Family</h2>
-                <p>Learn about the different types of saxophones.</p>
-                <img src="https://tse3.mm.bing.net/th/id/OIP.1nXE4ejxI3umSl4GlukzRQHaDM?pid=Api&P=0&h=180">
-                <h3>Types of Saxophones</h3>
-                <ul>
-                    <li>Soprano Saxophone</li>
-                    <p>The soprano saxophone is the smallest and highest-pitched member of the saxophone family.</p>
-                    <li>Alto Saxophone</li>
-                    <p>The alto saxophone is the most commonly used saxophone in jazz and classical music.</p>
-                    <li>Tenor Saxophone</li>
-                    <p>The tenor saxophone has a rich, warm tone and is popular in both jazz and popular music.</p>
-                    <li>Baritone Saxophone</li>
-                    <p>The baritone saxophone produces a deep, resonant sound and is often used in military bands and
-                        orchestras.</p>
-                </ul>
-            </section>
-            <section id="brands">
-                <h2>Popular Brands</h2>
-                <p>Discover the most renowned saxophone manufacturers.</p>
-                <h3>Selmer</h3>
-                <img src="https://tse2.mm.bing.net/th/id/OIP.dl0_zWx75g1J0k6X8x3WQHaE8?pid=Api&P=0&h=180"
-                    alt="Selmer Saxophone">
-                <p>Selmer is a renowned manufacturer of saxophones, known for their high-quality instruments.</p>
+        </section>
+        <section id="famous-saxophonists">
+            <h2>Famous Saxophonists</h2>
+            <p>Learn about the most influential saxophone players in history.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Uzor-uba@Sax.A</p>
+    </footer>
 
-            </section>
-            <section id="famous-saxophonists">
-                <h2>Famous Saxophonists</h2>
-                <p>Learn about the most influential saxophone players in history.</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 Uzor-uba@Sax.A</p>
-        </footer>
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
     </div>
 </body>
 
