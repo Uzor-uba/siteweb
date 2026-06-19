@@ -88,20 +88,30 @@
         </el-dialog>
     </header>
 
-    <header>
-        <h1>What you should know about saxophone</h1>
-        <p>This is a simple guide to learning about the saxophone.</p>
+    <header class="max-w-5xl mx-auto px-4 pt-10 text-center">
+        <h1 class="text-4xl font-bold text-slate-900 mb-3">What you should know about the saxophone</h1>
+        <p class="mx-auto max-w-2xl text-lg text-slate-700">This is a simple guide to learning about the saxophone, its
+            family of instruments, famous players, and trusted brands.</p>
     </header>
-    <div class="page-nav">
-        <ul>
-            <li><a href="#history">History</a></li>
-            <li><a href="#sax-family">Saxophone Family</a></li>
-            <li><a href="#brands">brands</a></li>
-            <li><a href="#famous-saxophonists">Famous Saxophonists</a></li>
+    <nav aria-label="Page sections"
+        class="page-nav mx-auto mt-8 mb-10 max-w-5xl rounded-2xl bg-white/95 px-4 py-4 shadow-sm">
+        <ul class="flex flex-wrap justify-center gap-3 text-sm font-semibold">
+            <li><a href="#history"
+                    class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-indigo-700 transition hover:bg-indigo-100">History</a>
+            </li>
+            <li><a href="#sax-family"
+                    class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-indigo-700 transition hover:bg-indigo-100">Saxophone
+                    Family</a></li>
+            <li><a href="#brands"
+                    class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-indigo-700 transition hover:bg-indigo-100">Brands</a>
+            </li>
+            <li><a href="#famous-saxophonists"
+                    class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-indigo-700 transition hover:bg-indigo-100">Famous
+                    Saxophonists</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <main>
+    <main class="pb-10">
         <section id="history" class="bg-white/90 p-6 rounded-2xl shadow-sm text-left max-w-5xl mx-auto my-8">
             <h2 class="text-3xl font-semibold text-indigo-700 mb-4">History</h2>
             <p class="mb-4">The saxophone was invented by Belgian instrument maker Adolphe Sax in 1840. Sax wanted to
@@ -125,49 +135,75 @@
                 </div>
                 <div>
                     <img class="rounded-xl shadow-lg w-full"
-                        src="https://tse4.mm.bing.net/th/id/OIP.N1gFhUrGcwQfc5zOxyzs9QHaE8?pid=Api&P=0"
+                        src="https://up.yimg.com/ib/th/id/OIP.8RioMJkmqwdJ3jm510G4kgHaE8?pid=Api&rs=1&c=1&qlt=95&w=155&h=103"
                         alt="Historic saxophone illustration">
                 </div>
             </div>
             <p class="mt-4">From its origins as a military band instrument to its place at the heart of jazz, the
                 saxophone has become one of the most beloved and versatile instruments in music history.</p>
         </section>
-        <section id="sax-family">
-            <h2>Saxophone Family</h2>
-            <p>Learn about the different types of saxophones.</p>
-            <img class="mx-auto" src="https://tse3.mm.bing.net/th/id/OIP.1nXE4ejxI3umSl4GlukzRQHaDM?pid=Api&P=0&h=180">
-            <h3>Types of Saxophones</h3>
-            <ul>
-                <li>Soprano Saxophone</li>
-                <p>The soprano saxophone is the smallest and highest-pitched member of the saxophone family.</p>
-                <li>Alto Saxophone</li>
-                <p>The alto saxophone is the most commonly used saxophone in jazz and classical music.</p>
-                <li>Tenor Saxophone</li>
-                <p>The tenor saxophone has a rich, warm tone and is popular in both jazz and popular music.</p>
-                <li>Baritone Saxophone</li>
-                <p>The baritone saxophone produces a deep, resonant sound and is often used in military bands and
-                    orchestras.</p>
-            </ul>
+        <section id="sax-family" class="bg-white/90 p-6 rounded-2xl shadow-sm text-left max-w-5xl mx-auto my-8">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Saxophone Family</h2>
+            <p class="mb-4">From bright soprano tones to deep baritone power, the saxophone family includes instruments
+                for every musical voice.</p>
+            <div class="grid gap-6 lg:grid-cols-[1fr_300px] items-start">
+                <div class="space-y-6">
+                    <article class="rounded-2xl bg-white/90 p-5 shadow-sm">
+                        <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Soprano Saxophone</h3>
+                        <p>The soprano saxophone is the smallest and highest-pitched member of the family. It often
+                            sounds bright and lyrical, making it popular in jazz and classical solos.</p>
+                    </article>
+                    <article class="rounded-2xl bg-white/90 p-5 shadow-sm">
+                        <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Alto Saxophone</h3>
+                        <p>The alto saxophone is the most common saxophone today. It balances warmth and agility, and is
+                            widely used in jazz, pop, and school bands.</p>
+                    </article>
+                    <article class="rounded-2xl bg-white/90 p-5 shadow-sm">
+                        <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Tenor Saxophone</h3>
+                        <p>The tenor saxophone has a rich, warm tone. It is a favorite in jazz and rock because it can
+                            play both melodic solos and strong rhythmic lines.</p>
+                    </article>
+                    <article class="rounded-2xl bg-white/90 p-5 shadow-sm">
+                        <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Baritone Saxophone</h3>
+                        <p>The baritone saxophone produces a deep, resonant sound and is often used in big bands, jazz
+                            ensembles, and film music to provide a solid low voice.</p>
+                    </article>
+                </div>
+                <img class="rounded-xl shadow-lg w-full"
+                    src="https://tse3.mm.bing.net/th/id/OIP.1nXE4ejxI3umSl4GlukzRQHaDM?pid=Api&P=0&h=180"
+                    alt="Different saxophones displayed together">
+            </div>
         </section>
-        <section id="brands">
-            <h2>Popular Brands</h2>
-            <p>Discover the most renowned saxophone manufacturers.</p>
-            <h3>Selmer</h3>
-            <img class="mb-4 mx-auto"
-                src="https://tse3.mm.bing.net/th/id/OIP.zsYNq_ruoGIZoix0TO-KzQHaFY?pid=Api&h=220&P=0"
-                alt="Selmer Saxophone">
-            <p>Selmer is a renowned manufacturer of saxophones, </p> known for their high-quality instruments.</p>
-            <h3>Yamaha</h3>
-            <img class="mb-4 mx-auto"
-                src="https://tse1.mm.bing.net/th/id/OIP.qU8YwVyjLgrQdJ5guViigQHaHa?pid=Api&h=220&P=0" alt="">
-            <p>Yamaha is a well-known brand that produces </p> a wide range of musical instruments, including
-            saxophones.</p>
-            <h3>Yanagisawa</h3>
-            <img class="mb-4 mx-auto"
-                src="https://tse1.mm.bing.net/th/id/OIP.cY6AMzJl5Gc0XfFXyabYtAHaF6?pid=Api&h=220&P=0" alt="">
-            <p>Yanagisawa is a Japanese company that specializes in manufacturing high-quality saxophones, </p> known
-            for
-            their craftsmanship and attention to detail.</p>
+        <section id="brands" class="bg-white/90 p-6 rounded-2xl shadow-sm text-left max-w-5xl mx-auto my-8">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Popular Brands</h2>
+            <p class="mb-6">These manufacturers are known for building saxophones that musicians trust on stage and in
+                the studio.</p>
+            <div class="grid gap-6 lg:grid-cols-3">
+                <article class="rounded-2xl bg-slate-50 p-5 shadow-sm text-center">
+                    <img class="mx-auto mb-4 rounded-xl"
+                        src="https://tse3.mm.bing.net/th/id/OIP.zsYNq_ruoGIZoix0TO-KzQHaFY?pid=Api&h=220&P=0"
+                        alt="Selmer saxophone">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Selmer</h3>
+                    <p>Selmer is a historic French brand famous for professional saxophones used by many jazz legends.
+                    </p>
+                </article>
+                <article class="rounded-2xl bg-slate-50 p-5 shadow-sm text-center">
+                    <img class="mx-auto mb-4 rounded-xl"
+                        src="https://tse1.mm.bing.net/th/id/OIP.qU8YwVyjLgrQdJ5guViigQHaHa?pid=Api&h=220&P=0"
+                        alt="Yamaha saxophone">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Yamaha</h3>
+                    <p>Yamaha makes reliable saxophones for students and professionals, known for smooth playability and
+                        consistent quality.</p>
+                </article>
+                <article class="rounded-2xl bg-slate-50 p-5 shadow-sm text-center">
+                    <img class="mx-auto mb-4 rounded-xl"
+                        src="https://tse1.mm.bing.net/th/id/OIP.cY6AMzJl5Gc0XfFXyabYtAHaF6?pid=Api&h=220&P=0"
+                        alt="Yanagisawa saxophone">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Yanagisawa</h3>
+                    <p>Yanagisawa is a Japanese maker respected for its handcrafted, detail-oriented saxophones with a
+                        warm, focused tone.</p>
+                </article>
+            </div>
         </section>
 
         <div class="mb-4">
