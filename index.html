@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>My Website</title>
-<meta name="description" content="A simple HTML starter template.">
-<link rel="icon" href="favicon.ico">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="stylesheet" href="styles.css">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Uzor-uba - Saxophone Enthusiast</title>
+    <meta name="description"
+        content="Welcome to my saxophone hobby showcase. Discover my journey with the saxophone and my passion for music.">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
     <header class="bg-indigo-600 dark:bg-indigo-900">
         <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
             <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Your Company</span>
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180" alt=""
-                        class="h-8 w-auto dark:hidden" />
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180" alt=""
-                        class="h-8 w-auto not-dark:hidden" />
+                <a href="index.html" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Home</span>
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180"
+                        alt="Saxophone Icon" class="h-8 w-auto dark:hidden" />
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180"
+                        alt="Saxophone Icon" class="h-8 w-auto not-dark:hidden" />
                 </a>
             </div>
             <div class="flex lg:hidden">
@@ -37,13 +37,11 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="Home.html" class="text-sm/6 font-semibold text-white">Home</a>
+                <a href="index.html" class="text-sm/6 font-semibold text-white">Home</a>
                 <a href="hobbie.html" class="text-sm/6 font-semibold text-white">Hobbies</a>
-                <a href="video.html" class="text-sm/6 font-semibold text-white">Video</a>
-
+                <a href="video.html" class="text-sm/6 font-semibold text-white">Videos</a>
             </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
         <el-dialog>
             <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
@@ -51,15 +49,14 @@
                     <el-dialog-panel
                         class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
                         <div class="flex items-center justify-between">
-                            <a href="#" class="-m-1.5 p-1.5">
-                                <span class="sr-only">Your Company</span>
+                            <a href="index.html" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Home</span>
                                 <img src="https://tse4.mm.bing.net/th/id/OIP.8LdWqPeK_ujrDLERDpqOiwHaHe?pid=Api&P=0&h=180"
-                                    alt="" class="h-8 w-auto dark:hidden" />
-
+                                    alt="Saxophone Icon" class="h-8 w-auto dark:hidden" />
                             </a>
                             <button type="button" command="close" commandfor="mobile-menu"
                                 class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400">
-                                <span class="sr-only">close menu</span>
+                                <span class="sr-only">Close menu</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                     data-slot="icon" aria-hidden="true" class="size-6">
                                     <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
@@ -69,18 +66,13 @@
                         <div class="mt-6 flow-root">
                             <div class="-my-6 divide-y divide-gray-500/10 dark:divide-gray-500/20">
                                 <div class="space-y-2 py-6">
-                                    <a href="Home.html"
+                                    <a href="index.html"
                                         class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Home</a>
                                     <a href="hobbie.html"
                                         class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Hobbies</a>
                                     <a href="video.html"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Video</a>
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Videos</a>
                                 </div>
-                                <div class="py-6">
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Dashboard</a>
-                                </div>
-
                             </div>
                         </div>
                     </el-dialog-panel>
@@ -89,48 +81,129 @@
         </el-dialog>
     </header>
 
-
-    <header>
-        <h1>Hello, I'm Uzor-uba</h1>
-
-        <p>I'am a student starting his first project and i want to share with you one of my hobbies: Playing the
-            saxophone
-        </p>
-        <p>I started playing saxophone when I was 7 years old and since then i have discovered how to enjoy
-            music in
-            my on
-            way .</p>
-        <img class="mx-auto"
-            src="https://www.musicgrotto.com/wp-content/uploads/2022/08/man-playing-saxophone-up-close-city-skyline-graphic-art.jpg">
-    </header>
-    </div>
-
-    <main class="mb-4">
-        <section class="mb-4">
-            <h2>Welcome in the World of Saxophone </h2>
-            <p>Discover the beauty and versatility of this instrument!</p>
-            <p>Whether you're a beginner or an experienced musician, the saxophone offers a wide range of musical
-                possibilities. From jazz to classical, pop to rock, the saxophone can add depth and emotion to any
-                musical composition.</p>
-        </section>
-        <div aria-dropeffect="link">
-            <a href="hobbie.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next
-                ></a>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-500 to-purple-600 py-20">
+        <div class="max-w-6xl mx-auto px-4 lg:flex lg:items-center lg:gap-12">
+            <div class="lg:flex-1 mb-8 lg:mb-0">
+                <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    Hello, I'm <span class="text-yellow-300">Uzor-uba</span>
+                </h1>
+                <p class="text-lg text-indigo-100 mb-4">
+                    A passionate student and musician sharing my love for the saxophone with the world.
+                </p>
+                <p class="text-base text-indigo-200 mb-6 leading-relaxed">
+                    I started playing saxophone when I was 7 years old, and since then I've discovered how to enjoy
+                    music in my own unique way. Through dedication and practice, I've developed a deep appreciation for
+                    this beautiful instrument.
+                </p>
+                <div class="flex gap-4 flex-wrap">
+                    <a href="hobbie.html"
+                        class="inline-block bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg hover:bg-yellow-300 transition-colors shadow-lg">
+                        Explore My Hobbies
+                    </a>
+                    <a href="video.html"
+                        class="inline-block bg-indigo-900 text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-800 transition-colors border border-indigo-400">
+                        Watch Videos
+                    </a>
+                </div>
+            </div>
+            <div class="lg:flex-1">
+                <img src="https://www.musicgrotto.com/wp-content/uploads/2022/08/man-playing-saxophone-up-close-city-skyline-graphic-art.jpg"
+                    alt="Person playing saxophone against city skyline"
+                    class="w-full rounded-3xl shadow-2xl object-cover" />
+            </div>
         </div>
+    </section>
 
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <section class="mb-12">
+            <div class="bg-white rounded-3xl shadow-lg p-8 lg:p-12">
+                <h2 class="text-4xl font-bold text-indigo-700 mb-4">Welcome to the World of Saxophone</h2>
+                <p class="text-xl text-slate-700 mb-6 font-semibold text-indigo-600">
+                    Discover the beauty and versatility of this magnificent instrument!
+                </p>
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    Whether you're a beginner or an experienced musician, the saxophone offers a wide range of musical
+                    possibilities. From jazz to classical, pop to rock, the saxophone can add depth, emotion, and
+                    sophistication to any musical composition.
+                </p>
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    This site is dedicated to exploring the rich history of the saxophone, learning techniques,
+                    discovering famous performances, and finding inspiration through curated video content. Join me on
+                    this musical journey!
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <article
+                class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl shadow-md p-8 hover:shadow-xl transition-shadow">
+                <div class="text-4xl mb-4">🎵</div>
+                <h3 class="text-2xl font-bold text-blue-900 mb-3">Learn History</h3>
+                <p class="text-slate-700 mb-4">
+                    Explore the fascinating history of the saxophone from its invention to modern performances.
+                </p>
+                <a href="hobbie.html#history" class="text-blue-700 font-semibold hover:underline">Learn more →</a>
+            </article>
+
+            <article
+                class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl shadow-md p-8 hover:shadow-xl transition-shadow">
+                <div class="text-4xl mb-4">🎬</div>
+                <h3 class="text-2xl font-bold text-purple-900 mb-3">Watch Videos</h3>
+                <p class="text-slate-700 mb-4">
+                    Enjoy curated saxophone performances, covers, and instructional content from talented musicians.
+                </p>
+                <a href="video.html" class="text-purple-700 font-semibold hover:underline">Watch now →</a>
+            </article>
+
+            <article
+                class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl shadow-md p-8 hover:shadow-xl transition-shadow">
+                <div class="text-4xl mb-4">🎷</div>
+                <h3 class="text-2xl font-bold text-pink-900 mb-3">Discover More</h3>
+                <p class="text-slate-700 mb-4">
+                    Dive deeper into saxophone techniques, famous saxophonists, and popular instruments.
+                </p>
+                <a href="hobbie.html#famous-saxophonists" class="text-pink-700 font-semibold hover:underline">Explore
+                    →</a>
+            </article>
+        </section>
+
+        <!-- Highlight Section -->
+        <section class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-3xl shadow-md p-8 lg:p-12 text-center">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-4">Start Your Saxophone Journey</h3>
+            <p class="text-lg text-slate-700 mb-8 max-w-2xl mx-auto">
+                Whether you're curious about the saxophone or looking to deepen your musical knowledge, this site offers
+                resources and inspiration for all levels.
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="hobbie.html"
+                    class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition-colors">
+                    Browse Hobbies
+                </a>
+                <a href="video.html"
+                    class="bg-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-purple-700 transition-colors">
+                    View Videos
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Uzor-uba@Sax.A</p>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 mt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-slate-400">&copy; 2026 Uzor-uba@Sax.A</p>
+            <p class="text-sm text-slate-500 mt-2">Celebrating the joy of saxophone music</p>
+        </div>
     </footer>
 
-    <!-- polyfill automatically -->
+    <!-- Polyfill for modal/dialog support -->
     <script type="module">
         import 'https://cdn.jsdelivr.net/npm/invokers-polyfill/invoker.min.js';
     </script>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
